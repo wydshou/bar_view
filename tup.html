@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="qq.js"></script>
+	<title></title>
+</head>
+<body>
+<div style="width:640px; height:400px;">
+  <img id="origin" class="myimage" src="./images/img.png"/>
+</div><div id="targetDiv"></div>
+<script>
+$(document).ready(function(){
+  
+ $("#origin").tablePic({
+  target: 'targetDiv',col:4,row:3,borderColor:'#fff',freeColor:'#cec'
+ });
+  
+});
+</script>
+</body>
+</html>>
+
+

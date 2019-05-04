@@ -1,0 +1,286 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>1</title>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+ <link charset="utf-8" rel="stylesheet" href="boots/css/bootstrap.css">
+ 	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="navbar navbar-default ">
+<!--头部-->
+
+<div class="row top_bg" id="top_bg">
+	<div class="col-md-7 userlogo">
+		<div class="top_logo ">
+			<a href='./'><img src="images/admin_logo.png"></a>
+		</div>
+		<!-- 信息 -->
+		<div class="top_user">
+			  <ul class="navbar-nav navbar-left m-n hidden-xs nav-user">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle exc_s userinfo" data-toggle="dropdown">
+		            <span class="thumb-sm avatar">
+		              <img src="images/photo/avatar.jpg">
+		            </span>
+		           <span class="user_text"> admin</span> <b class="caret"></b>
+		          </a>
+		          <ul class="dropdown-menu animated fadeInRight">
+		                <span class="arrow top"></span>
+		              <li>
+		                <a href="#" >个人信息</a>
+		              </li>
+		            <li>
+		              <a href="#" >修改密码</a>
+		            </li>
+		            <li>
+		              <a href="" >退出登陆</a>
+		            </li>
+		          </ul>
+		        </li>
+     		 </ul>
+		</div>
+	</div>
+		<!-- 导航 -->
+		<div class="dh_bg col-md-5">
+			<ul class="row menusile">
+				<li>
+					<a href="#" class="num0">
+						<!-- <i class="img dh_01HOME"></i> -->
+						<span><b>商品</b></span>
+					</a>
+				</li>
+				<li >
+					<a href="#" class="num1">
+						<!-- <i class="img dh_02COMPASS"></i> -->
+						<span><b>订单</b></span>
+					</a>	
+				</li>
+			<!--管理员和商户3看到的界面-->
+				<li>
+					<a href="#" class="num2">
+						<!-- <i class="img dh_02COMPASS"></i> -->
+						<span><b>客服</b></span>
+					</a>	
+				</li>
+				<li>
+					<a href="#" class="num3">
+						<span><b>销售</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="num4">
+						<span><b>店铺</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="num7">
+						<span><b>全球业务</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="num5">
+						<span><b>报表</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="num6">
+						<span><b>设置</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo site_url('ScanPrintLabel/index/type/2');?>">
+						<span style="color: red;"><b>扫码发货</b></span>
+					</a>
+				</li>
+	        </ul>
+	        <!-- 背景块 -->
+	       <!--  <div class="dh_bg_cur">
+	        	<img src="images/nav_cur.png">
+	        </div> -->
+			<!-- 二级菜单 -->
+			<div class="two_nav_box">
+				<div class="two_nav">
+					<span></span>
+					<div class="num0">
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">商品管理</a></dt>
+							<dd class="numright"><a href="#" target="right">新增商品</a></dd>
+							<dd class="numright"><a href="#" target="right">商品列表</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="two_nav">
+					<span></span>
+					<div class="num1">
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#" >订单管理</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/1');?>" target="right">待处订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/6');?>" target="right">库存不足</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/11');?>" target="right">留言订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/2');?>" target="right">待发订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/3');?>" target="right">配货订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/10');?>" target="right">全部订单</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#" >订单操作</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/4');?>" target="right">待传跟踪号</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/7');?>" target="right">待付款</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/up/type/add');?>" target="right">新增订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/orderHistory');?>" target="right">已发货(导出)</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/listing/status/8');?>" target="right">发货失败</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/orderLabel');?>" target="right">标签生成记录</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/export_record');?>" target="right">UK订单导出记录</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('orders/address_error');?>" target="right">配送地址检查</a></dd>
+						</dl>
+					</div>
+				</div>
+						 <div class="two_nav">
+					<span></span>
+					<div class="num2">
+							<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay消息</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('messages/listing');?>" target="right">待回复</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('messages/listing/mbstate/2');?>" target="right">已回复</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('messages/listing/salestate/1');?>" target="right">销售待处理</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay调解中心</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('cases/listing');?>" target="right">客服待处理</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cases/listing/salestate/1');?>" target="right">销售待处理</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cases/listing/mbstate/1');?>" target="right">买家待处理</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cases/listing/mbstate/2');?>" target="right">已关闭的纠纷</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay取消申请</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('cancellations/listing/mbstate/1');?>" target="right">买家申请未取消</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cancellations/listing/mbstate/2');?>" target="right">买家申请已取消</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cancellations/listing/mbstate/3');?>" target="right">卖家操作取消</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay在线议价</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('offers/listing');?>" target="right">待议价</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('offers/listing/mbstate/1');?>" target="right">已议价</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">仓库反馈</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('CrmReturnGoods/listing/stockouttf/0');?>" target="right">买家退货</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('CrmReturnGoods/listing/stockouttf/1');?>" target="right">仓库无货</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('CrmReturnGoods/listing/stateft/1');?>" target="right">已处理</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="two_nav">
+					<!-- <span></span> -->
+					<div class="num3">
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">消息待处理</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('messages/listing/salestate/1');?>" target="right">eBay消息-待处理</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('cases/listing/salestate/1');?>" target="right">eBay调解中心-待处理</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">数据管理</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('StatsStockOut');?>" target="right">缺货sku (实时)</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('StatsStockOut/monthly');?>" target="right">缺货订单</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('StatsStockOut/TrackingOvertime');?>" target="right">跟踪号监控 (实时)</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('ExpAppt/listing');?>" target="right">Letter发货设置</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('StatsStockOut/Letter');?>" target="right">Letter订单比率</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('StockModify/listing');?>" target="right">库存修正</a></dd>
+							
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay在线商品</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('pseller/listing');?>" target="right">商品列表</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('pseller/kandeng');?>" target="right">新增刊登</a></dd>
+						</dl>
+					</div>
+				</div>
+						<div class="two_nav">
+					<span></span>
+					<div class="num4">
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">速卖通店铺设置</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/smt');?>" target="right">店铺列表</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/smt/trigger/add');?>" target="right">新增店铺</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">亚马逊店铺设置</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/amazon');?>" target="right">店铺列表</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/amazon/trigger/add');?>" target="right">新增店铺</a></dd>
+						</dl>
+						<dl>
+							<i></i>
+							<dt class="numright"><a href="#">eBay店铺设置</a></dt>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/ebay');?>" target="right">店铺列表</a></dd>
+							<dd class="numright"><a href="<?php echo site_url('shop/listing/link/ebay/trigger/add');?>" target="right">新增店铺</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 二级菜单end -->
+		</div>
+		<!-- 导航菜单 end -->
+</div>
+</header>
+<div class="content"> 
+<div class="row">
+            <div class="sile col-md-2">
+                <div class="panel-group table-responsive accordion" role="tablist" id="accordion">
+                    <li class="panel panel-default leftMenu">
+                        <!-- 利用data-target指定要折叠的分组列表 -->
+                        <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-parent="#accordion"  data-target="#collapseListGroup1" role="tab" >
+                            <h4 class="sile_title">
+                                分组
+                                <!-- <span class="glyphicon glyphicon-chevron-up right"></span> -->
+                            </h4>
+                        </div>
+                        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                        <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <!-- 利用data-target指定URL -->
+                                <button class="menu-item-left" data-target="test2.html">
+                                    分组项1-1
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    分组项1-2
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                   分组项1-3
+                                </button>
+                              </li>
+                            </ul>
+                        </div>
+                    </li><!--panel end-->
+                </div>
+            </div>
+            <div class="col-md-10">
+                <!-- <div style="width: 500px;height: 1000px;background: red">11</div> -->
+            </div>
+        </div>
+     </div>
+</body>
+</html>
